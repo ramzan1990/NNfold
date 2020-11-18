@@ -18,7 +18,8 @@ python3 train_local.py 20 ct_tr
 ```sh
 python3 train_global.py 1600 ct_tr
 ```
-After you obtain two models, rename them to model_rna_m and model_rna_check_m.
+After you obtain the two models, rename them to model_rna_m and model_rna_check_m.
+Alternatively they can also be downloaded from [NNfold website](https://www.cbrc.kaust.edu.sa/NNfold/data.html).
 To make new predictions use:  
 ```sh
 python3 predict.py test.fa out 20 1600 m 

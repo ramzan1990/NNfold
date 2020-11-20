@@ -15,6 +15,11 @@ NNfold can be installed from the [github repository](https://github.com/ramzan19
 git clone https://github.com/ramzan1990/NNfold
 cd NNfold
 ```
+
+or more simply
+```sh
+pip install nnfold
+```
 NNfold requires ```tensorflow>=1.7.0```, the GPU version is highly recommended.
 
 ## Usage
@@ -26,10 +31,10 @@ unzip data.zip
 
 With the data in place you can now train the local and global models:
 ```sh
-python3 -m nnfold.train_local 20 training_set
+nnfold-train-local 20 training_set
 ```
 ```sh
-python3 -m nnfold.train_global.py 1600 training_set
+nnfold-train-global 1600 training_set
 ```
 
 After you obtain two models, rename them to model_rna_m and model_rna_check_m.
@@ -42,7 +47,7 @@ mv models/* .
 rmdir models
 ```
 
-To make new predictions use:  
+To make new predictions, with the models in the current dir, use:  
 ```sh
 wget http://www.cbrc.kaust.edu.sa/NNfold/test.fa
 mkdir results

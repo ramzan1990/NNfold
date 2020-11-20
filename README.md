@@ -52,7 +52,7 @@ To make new predictions, with the models in the current dir, use:
 ```sh
 wget http://www.cbrc.kaust.edu.sa/NNfold/test.fa
 mkdir results
-python3 -m nnfold.predict test.fa results 20 1600 m
+nnfold-predict test.fa results 20 1600 m
 ```
 Where "results" is an output folder.
 

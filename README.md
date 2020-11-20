@@ -14,6 +14,7 @@ NNfold can be installed from the [github repository](https://github.com/ramzan19
 ```sh
 git clone https://github.com/ramzan1990/NNfold
 cd NNfold
+pip install .
 ```
 
 or more simply
@@ -23,7 +24,7 @@ pip install nnfold
 NNfold requires ```tensorflow>=1.7.0```, the GPU version is highly recommended.
 
 ## Usage
-NNfold can be run from the command line. After downloading the data from [NNfold website](https://www.cbrc.kaust.edu.sa/NNfold/data.html). Continue from the git NNfold dir:
+NNfold can be run from the command line. After downloading the data from [NNfold website](https://www.cbrc.kaust.edu.sa/NNfold/data.html):
 ```sh
 wget http://www.cbrc.kaust.edu.sa/NNfold/NNfold/data.zip
 unzip data.zip

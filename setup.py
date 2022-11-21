@@ -15,7 +15,7 @@ setup(name = package,
           'apetype',
           'numpy',
           'tflearn',
-          'tensorflow<2',
+          'tensorflow<3',
           'sklearn'
       ],
       extras_require = {
